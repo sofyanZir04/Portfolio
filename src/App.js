@@ -3,16 +3,16 @@ import Navbar from "./component/Navbar";
 import Soft from "./component/Soft";
 import Coding from "./component/Coding";
 import Contact from "./component/Contact";
+import Me from "./component/Me";
 
 function App() {
   return (
-    
-    <div className="bg-black text-white border-solid 
-     border-white border-8 dot">
-      <Navbar/>
-      <div className='mx-36 my-14'>
-        <About/>
-        <Soft/>
+    <div>
+      <Navbar />
+      <div className="container">
+        <Me/>
+        <About />
+        <Soft />
         <Coding />
         <Contact />
       </div>

@@ -20,3 +20,20 @@ html {
 		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
 		var(--dot-color);
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate {
+
+  animation: scroll 25s linear infinite;
+}
+.animateN {
+
+  animation: scroll 5s linear infinite;
+}

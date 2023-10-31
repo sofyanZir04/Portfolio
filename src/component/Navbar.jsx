@@ -1,21 +1,56 @@
+import { useState } from "react";
 import { TbSquareLetterS } from "react-icons/tb";
 import Fade from 'react-reveal/Fade';
 
-export default function Navbar(){
-    return(
-        <div className=" font-mono left-60 top-6  z-20 fixed ">
+export default function Navbar() {
+    const [color,setColor]=useState(false);
+    const ChangeC = () =>{
+        if(window.scrollY>=90){
+            setColor(true);
+        }else{
+            setColor(false)
+        }
+    }
+    window.addEventListener('scroll',ChangeC);
+    return (
+        <div className={color ? `font-mono z-20 fixed top-0 left-0 right-0 sm:my-0 flex justify-start px-20 bg-black text-white` 
+        :`font-mono z-20 fixed top-0 left-0 right-0 sm:my-0 text-black bg-transparent flex justify-start px-20`}>
             <Fade top>
-                <div className="text-black bg-white rounded-full ">
-                    <ul className="flex items-center justify-between ">
-                        <li className="mx-6 justify-between text-lg font-bold py-2"><a  href="#Home"><TbSquareLetterS  size={36} /> </a></li>
-                        <li className="mx-6 justify-between text-lg font-bold py-2"><a className="py-3 hover:px-[6px] hover:rounded-2xl hover:bg-black hover:text-white transition-all duration-400 ease-in-out"  href="#About">About </a></li>
-                        <li className="mx-6 justify-between text-lg font-bold py-2"><a className="py-3 hover:px-[6px] hover:rounded-2xl hover:bg-black hover:text-white transition-all duration-400 ease-in-out"  href="#Soft">Soft Skills </a></li>
-                        <li className="mx-6 justify-between text-lg font-bold py-2"><a className="py-3 hover:px-[6px] hover:rounded-2xl hover:bg-black hover:text-white transition-all duration-400 ease-in-out"  href="#Coding">Coding Skills </a></li>
-                        <li className="mx-6 justify-between text-lg font-bold py-2"><a className="py-3 hover:px-[6px] hover:rounded-2xl hover:bg-black hover:text-white transition-all duration-400 ease-in-out"  href="#Projects">Projects </a></li>
-                        <li className="mx-6 justify-between text-lg font-bold py-2"><a className="py-3 hover:px-[6px] hover:rounded-2xl hover:bg-black hover:text-white transition-all duration-400 ease-in-out"  href="#Contact">Contact </a></li>
+                <div className=" rounded-full px-4">
+                    <ul className="flex flex-col sm:flex-row items-center justify-center sm:justify-between">
+                        <li className="mx-2 sm:mx-6 text-lg font-bold py-2">
+                            <a href="#Home">
+                                <TbSquareLetterS size={36} />
+                            </a>
+                        </li>
+                        <li className="mx-2 sm:mx-6 text-lg font-bold py-2">
+                            <a className="py-2 sm:py-3 hover:px-2 hover:rounded-2xl  hover:bg-red-500 hover:text-white transition-all duration-400 ease-in-out" href="#About">
+                                About
+                            </a>
+                        </li>
+                        <li className="mx-2 sm:mx-6 text-lg font-bold py-2">
+                            <a className="py-2 sm:py-3 hover:px-2 hover:rounded-2xl hover:bg-black hover:text-white transition-all duration-400 ease-in-out" href="#Soft">
+                                Soft Skills
+                            </a>
+                        </li>
+                        <li className="mx-2 sm:mx-6 text-lg font-bold py-2">
+                            <a className="py-2 sm:py-3 hover:px-2 hover:rounded-2xl hover:bg-black hover:text-white transition-all duration-400 ease-in-out" href="#Coding">
+                                Coding Skills
+                            </a>
+                        </li>
+                        <li className="mx-2 sm:mx-6 text-lg font-bold py-2">
+                            <a className="py-2 sm:py-3 hover:px-2 hover:rounded-2xl hover:bg-black hover:text-white transition-all duration-400 ease-in-out" href="#Projects">
+                                Projects
+                            </a>
+                        </li>
+                        <li className="mx-2 sm:mx-6 text-lg font-bold py-2">
+                            <a className="py-2 sm:py-3 hover:px-2 hover:rounded-2xl hover:bg-black hover:text-white transition-all duration-400 ease-in-out" href="#Contact">
+                                Contact
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </Fade>
         </div>
-    )
+    );
 }

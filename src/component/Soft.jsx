@@ -1,61 +1,44 @@
-import { FaLanguage ,FaUserFriends } from "react-icons/fa";
+import React from "react";
 import Fade from 'react-reveal/Fade';
-import { SiHandshake} from "react-icons/si";
 
-export default function Soft(){
-    return(
-        
-            <div className=" p-10  border my-20
-             text-xl font-mono bg-black  text-white" id='Soft'>    
-                <div className=" mx-44">
-                    <Fade>
-                        <div className="p-8 my-4 text-4xl">
-                        <SiHandshake className="relative top-10" />
-                            <h2 className="font-mono font-black px-9 text-center">
-                            My Soft Skills<span className="text-5xl">.</span>
-                            </h2>
-                            <span className="border-b px-28 relative left-24 "></span>
-                        </div>   
-                    </Fade>
-                    <div className="">    
-                        <Fade left>    
-                            <div className=" text-xl border-b my-12 py-6">
-                                <div className="flex ">
-                                    <FaLanguage  size={50} /><h3 className="text-2xl py-2 px-4 font-bold">Language</h3>
-                                </div>
-                                <div className="mx-20">
-                                    <div className="">                    
-                                        <h2 className="text-xl font-black m-2">Arabic</h2>
-                                        <div class="mb-5 h-2 rounded-full  bg-white">
-                                            <div class="h-2 rounded-full bg-slate-900 w-full"  ></div>
-                                        </div>
-                                    </div>
-                                    <div className="text">
-                                        <h2 className="text-xl font-black m-2">English</h2>
-                                        <div className="mb-5 h-2 rounded-full bg-white">
-                                            <div className="h-2 rounded-full bg-slate-900 w-96" ></div>
-                                        </div>
-                                    </div>
-                                    <div className="text">
-                                        <h2 className="text-xl font-black m-2">French</h2>
-                                        <div className="mb-5 h-2 rounded-full bg-white">
-                                            <div className="h-2 rounded-full bg-slate-900 w-72" ></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade>
-                        
-                        <div className="">
-                            <Fade right>
-                                <FaUserFriends size={50}/>
-                            </Fade>
-                        </div>
-                    </div>
+export default function Soft() {
+  // Define your language proficiency and soft skills
+  const skills = [
+    { name: "Arabic", percentage: 90 },
+    { name: "French", percentage: 60 },
+    { name: "English", percentage: 75 },
+    { name: "Communication", percentage: 90 },
+    { name: "Leadership", percentage: 80 },
+    { name: "Flexibility", percentage: 85 },
+  ];
+
+  return (
+    <div className="p-10 text-xl font-mono bg-white text-black" id="Soft">
+      <div className="mx-auto md:mx-44">
+        <div className="p-8 my-4 text-4xl text-center">
+          <h2 className="font-mono font-black">
+            My Language Proficiency and Soft Skills
+          </h2>
+          <span className="border-b mx-auto w-24 mt-2"></span>
+        </div>
+        <Fade bottom>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {skills.map((skill, index) => (
+                <div key={index} className="bg-black text-white p-4 rounded-lg">
+                <h3 className="text-2xl font-bold">{skill.name}</h3>
+                <svg width="100%" height="16">
+                    <rect
+                    width={`${skill.percentage}%`}
+                    height="100%"
+                    fill="white"
+                    ></rect>
+                </svg>
+                <div className="text-right mt-2">{skill.percentage}%</div>
                 </div>
+            ))}
             </div>
-        
-    
-    )
-
+        </Fade>
+      </div>
+    </div>
+  );
 }
