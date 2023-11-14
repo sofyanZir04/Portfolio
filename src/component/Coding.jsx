@@ -1,14 +1,25 @@
-import { FaPython, FaReact, FaJsSquare, FaCss3Alt, FaHtml5, FaLaravel, FaGithub, FaNode, FaBootstrap, FaGit } from "react-icons/fa";
-import { SiHandshake, SiMysql, SiExpress, SiTailwindcss } from "react-icons/si";
+import { FaPython, FaReact, FaJsSquare,FaCss3Alt, FaHtml5, FaLaravel,
+     FaGithub, FaNode, FaBootstrap, FaGit } from "react-icons/fa";
+import { SiMysql, SiExpress, SiTailwindcss } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
 import { DiScrum } from "react-icons/di";
 import Fade from 'react-reveal/Fade';
 
 export default function Coding() {
     return (
-        <div className="bg-black sm:h-[300px] h-1/2 sm:my-36 text-white  font-mono flex flex-col justify-center" id='Coding'>
+        <div className="bg-black sm:h-[300px] h-1/2 sm:mt-36 text-white  font-mono flex flex-col justify-center" id='Coding'>
             {/* <div className="text-4xl text-center w-1/2 sm:w-full">
                     
+            </div> */}
+            {/* <div className='App'>
+                <h1>Hello React.</h1>
+                <video
+                style={{width:"70%"}}
+                    poster="https://unsplash.com/photos/a-view-through-a-hole-in-a-rock-formation-7EXy7SNldag"
+                    onMouseOver={event => event.target.play()}
+                    onMouseOut={event => event.target.pause()}
+                    src='https://apivideo-demo.s3.amazonaws.com/hello.mp4'  loop>
+                </video>
             </div> */}
             <h2 className="font-bold text-3xl text-white text-center my-4">
             Languages & Tools<span className="text-4xl">.</span>

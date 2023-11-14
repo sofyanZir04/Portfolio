@@ -20,12 +20,17 @@ html {
 		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
 		var(--dot-color);
 }
+
+.containerAnima{
+  transform: translate(-50%,-50%);
+}
+
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translate(0,0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translate(-100%,0);
   }
 }
 

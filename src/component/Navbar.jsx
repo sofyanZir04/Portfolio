@@ -13,8 +13,8 @@ export default function Navbar() {
     }
     window.addEventListener('scroll',ChangeC);
     return (
-        <div className={color ? `font-mono z-20 fixed top-0 left-0 right-0 sm:my-0 flex justify-start px-20 bg-black text-white` 
-        :`font-mono z-20 fixed top-0 left-0 right-0 sm:my-0 text-black bg-transparent flex justify-start px-20`}>
+        <div className={color ? `font-mono z-20 fixed top-0 left-0 right-0 sm:my-0 flex justify-center px-20 bg-black text-white` 
+        :`font-mono z-20 fixed top-0 left-0 right-0 sm:my-0 text-black bg-transparent flex justify-center px-20`}>
             <Fade top>
                 <div className=" rounded-full px-4">
                     <ul className="flex flex-col sm:flex-row items-center justify-center sm:justify-between">
@@ -30,12 +30,12 @@ export default function Navbar() {
                         </li>
                         <li className="mx-2 sm:mx-6 text-lg font-bold py-2">
                             <a className="py-2 sm:py-3 hover:px-2 hover:rounded-2xl hover:bg-black hover:text-white transition-all duration-400 ease-in-out" href="#Soft">
-                                Soft Skills
+                                Soft
                             </a>
                         </li>
                         <li className="mx-2 sm:mx-6 text-lg font-bold py-2">
                             <a className="py-2 sm:py-3 hover:px-2 hover:rounded-2xl hover:bg-black hover:text-white transition-all duration-400 ease-in-out" href="#Coding">
-                                Coding Skills
+                                Coding
                             </a>
                         </li>
                         <li className="mx-2 sm:mx-6 text-lg font-bold py-2">
