@@ -13,8 +13,8 @@ export default function Navbar() {
     }
     window.addEventListener('scroll',ChangeC);
     return (
-        <div className={color ? `font-mono z-20 fixed top-0 left-0 right-0 sm:my-0 flex justify-center px-20 bg-black text-white` 
-        :`font-mono z-20 fixed top-0 left-0 right-0 sm:my-0 text-black bg-transparent flex justify-center px-20`}>
+        <div className={color ? `font-mono sm:w-full z-20 fixed top-0 left-0 right-0 sm:my-0 flex justify-center px-20 bg-black text-white` 
+        :`font-mono z-20 fixed top-0 left-0 sm:w-full right-0 sm:my-0 text-black bg-transparent flex justify-center px-20`}>
             <Fade top>
                 <div className=" rounded-full px-4">
                     <ul className="flex flex-col sm:flex-row items-center justify-center sm:justify-between">

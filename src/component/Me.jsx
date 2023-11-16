@@ -1,7 +1,7 @@
 
 export default function Me() {
     return (
-        <div className="h-screen bg-white text-black font-mono"
+        <div className="h-screen bg-white text-black font-mono sm:w-full"
          id='Me'>
             <div className="sm:py-3 pt-60">
                 <div className=" flex items-center min-h-screen justify-center">

@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="sm:mx-8 pb-4 text-xl font-mono h-full sm:my-5 my-[1400px]  sm:border-2 border-black" id='Contact'>
+    <div className="pb-4 sm:w-4/5 mx-auto text-xl font-mono h-full sm:mt-5 mt-[1500px] mb-8 sm:border-2 border-black" id='Contact'>
       <div className="p-8 my-4 text-4xl text-center">
         <h2 className="font-mono font-black">Contact Us</h2>
       </div>
@@ -67,13 +67,13 @@ const Contact = () => {
             </div>
           </form>
           </div>
-          <div className="py-16 px-28">
+          <div className="py-16">
             {/* <h2>SOFYANE AIT OZOUMAR</h2> */}
-            <a href='https://www.linkedin.com/in/sofyane-ait-ozoumar/' target='_blank'><FaLinkedinIn className='inline mx-6'></FaLinkedinIn>LinkedIn Profile.</a>
+            <a href='https://www.linkedin.com/in/sofyane-ait-ozoumar/' target='_blank'><FaLinkedinIn className='inline mx-6'></FaLinkedinIn><span className='text-xs font-black'>LinkedIn Profile.</span></a>
             <br />
-            <a href='https://github.com/sofyanZir04' target='_blank'><FaGithub className='inline mx-6'></FaGithub>Github Profile.</a>
+            <a href='https://github.com/sofyanZir04' target='_blank'><FaGithub className='inline mx-6'></FaGithub><span className='text-xs font-black'>Github Profile.</span></a>
             <br />
-            <a href='mailto:aitozoumarsofyane@gmail.com' target='_blank'><SiGmail className='inline mx-6'></SiGmail>aitozoumarsofyane@gmail.com</a>
+            <a href='mailto:aitozoumarsofyane@gmail.com' target='_blank'><SiGmail className='inline mx-6'></SiGmail><span className='text-xs font-black'>aitozoumarsofyane@gmail.com</span></a>
             <br />
           </div>
       </div>

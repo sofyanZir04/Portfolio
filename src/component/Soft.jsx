@@ -13,7 +13,7 @@ export default function Soft() {
   ];
 
   return (
-    <div className="p-10 text-xl font-mono bg-white text-black" id="Soft">
+    <div className="p-10 text-xl font-mono sm:w-full bg-white text-black" id="Soft">
       <div className="mx-auto md:mx-44">
         <div className="p-8 my-4 text-4xl text-center">
           <h2 className="font-mono font-black">

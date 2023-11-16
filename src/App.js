@@ -8,11 +8,11 @@ import Projects from "./component/Projects";
 
 function App() {
   return (
-    <div>
+    <div className="sm:container">
       <Navbar />
-      <div className="container">
+      <div >
         <Me/>
-        <About />
+        <About /> 
         <Soft />
         <Coding />
         <Projects />

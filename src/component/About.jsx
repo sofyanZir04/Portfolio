@@ -3,7 +3,7 @@ import { FaRegHandPeace } from "react-icons/fa";
 
 export default function About() {
     return (
-        <div className="h-screen bg-black text-white font-mono" id='About'>
+        <div className="h-screen bg-black sm:w-full text-white font-mono" id='About'>
             <div className="sm:py-44 pt-64 sm:mx-16 mx-1 sm:px-36 px-2">
                 <Fade left>
                     <h1 className="font-black text-2xl  mb-4 sm:mr-36 sm:float-left float-none">About Me

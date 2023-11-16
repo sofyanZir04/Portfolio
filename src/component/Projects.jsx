@@ -7,23 +7,11 @@ import Fade from 'react-reveal/Fade';
 
 export default function Projects() {
    return (
-       <div className="sm:mb-36 h-[250vh] mx-8 font-mono flex flex-col justify-center sm:-mt-72 -mt-[500px]" id='Projects'>
-           {/* <div className="text-4xl text-center w-1/2 sm:w-full">
-                   
-           </div> */}
-           {/* <div className='App'>
-               <h1>Hello React.</h1>
-               <video
-               style={{width:"70%"}}
-                   poster="https://unsplash.com/photos/a-view-through-a-hole-in-a-rock-formation-7EXy7SNldag"
-                   onMouseOver={event => event.target.play()}
-                   onMouseOut={event => event.target.pause()}
-                   src='https://apivideo-demo.s3.amazonaws.com/hello.mp4'  loop>
-               </video>
-           </div> */}
+       <div className="sm:mb-36 h-[250vh] sm:mx-8 mx-3 font-mono flex flex-col justify-center sm:-mt-72 -mt-[470px] " id='Projects'>
+           
             <h2 className="font-mono my-8 font-black text-3xl text-center">Projects</h2>
            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-h-screen ">
-                <div className="max-w-xs ml-1 bg-white border border-gray-400 rounded-lg 
+                <div className=" ml-1 bg-white border border-gray-400 rounded-lg 
                 shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="p-5">
                         <a href="#">
@@ -48,7 +36,7 @@ export default function Projects() {
                         </a>
                     </div>
                 </div>
-                <div className="max-w-xs ml-1 bg-white border border-gray-400 rounded-lg 
+                <div className=" ml-1 bg-white border border-gray-400 rounded-lg 
                 shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="p-5">
                         <a href="#">
@@ -75,7 +63,7 @@ export default function Projects() {
                         </a>
                     </div>
                 </div>
-                <div className="max-w-xs ml-1 bg-white border border-gray-400 rounded-lg 
+                <div className=" ml-1 bg-white border border-gray-400 rounded-lg 
                 shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="p-5">
                         <a href="#">
@@ -101,7 +89,7 @@ export default function Projects() {
                         </a>
                     </div>
                 </div>
-                <div className="max-w-xs ml-1 bg-white border border-gray-400 rounded-lg 
+                <div className=" ml-1 bg-white border border-gray-400 rounded-lg 
                 shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="p-5">
                         <a href="#">
@@ -128,7 +116,7 @@ export default function Projects() {
                         </a>
                     </div>
                 </div>
-                <div className="max-w-xs ml-1 bg-white border border-gray-400 rounded-lg 
+                <div className=" ml-1 bg-white border border-gray-400 rounded-lg 
                 shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="p-5">
                         <a href="#">
@@ -159,4 +147,18 @@ export default function Projects() {
            
        </div>
    )
+   
+//    {/* <div className="text-4xl text-center w-1/2 sm:w-full">
+                   
+//            </div> */} for video 
+//            {/* <div className='App'>
+//                <h1>Hello React.</h1>
+//                <video
+//                style={{width:"70%"}}
+//                    poster="https://unsplash.com/photos/a-view-through-a-hole-in-a-rock-formation-7EXy7SNldag"
+//                    onMouseOver={event => event.target.play()}
+//                    onMouseOut={event => event.target.pause()}
+//                    src='https://apivideo-demo.s3.amazonaws.com/hello.mp4'  loop>
+//                </video>
+//            </div> */}
 }
